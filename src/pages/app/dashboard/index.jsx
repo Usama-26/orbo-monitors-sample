@@ -104,9 +104,11 @@ export default function Dashboard() {
             </div>
             <div className="rounded-2xl border border-white/20 bg-white/10 backdrop-blur   p-4 w-60">
               <div>
-                <h6 className="text-sm text-gray-200">Amount of Tokens</h6>
+                <h6 className="text-sm text-gray-200">Relay Speed</h6>
                 <div className="flex mt-2">
-                  <h2 className="text-gray-100 text-3xl font-medium">1.2k</h2>
+                  <h2 className="text-gray-100 text-3xl font-medium">
+                    0.9 Sec
+                  </h2>
                   <span className="text-sky-300 font-semibold">
                     <span className="inline-flex text-sm ml-2">
                       <span>
