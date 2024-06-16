@@ -1,11 +1,15 @@
 import { classNames } from "@/utils/generics";
-import { ChevronLeftIcon, Cog6ToothIcon } from "@heroicons/react/24/outline";
+import {
+  ChevronDownIcon,
+  ChevronLeftIcon,
+  Cog6ToothIcon,
+} from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function DesktopSidebar({ navigation }) {
   return (
-    <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col text-zinc-200">
+    <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-[16rem] lg:flex-col text-zinc-200">
       {/* Sidebar component, swap this element with another sidebar if you like */}
       <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-zinc-700 bg-dark pb-4">
         <div className="flex justify-between items-center px-6 pr-2 ">
@@ -28,6 +32,15 @@ export default function DesktopSidebar({ navigation }) {
           <ul role="list" className="flex flex-1 flex-col gap-y-7">
             <li>
               <ul role="list" className="space-y-1">
+                <li className="uppercase text-sm px-6 py-2 text-zinc-500">
+                  <button
+                    type="button"
+                    className="uppercase flex gap-2 items-center"
+                  >
+                    <span>Orbo Monitors</span>
+                    <ChevronDownIcon className="w-4 h-4" />
+                  </button>
+                </li>
                 {navigation.map((item) => (
                   <li key={item.name}>
                     <Link

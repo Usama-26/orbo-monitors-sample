@@ -37,7 +37,7 @@ export default function AppLayout({ children }) {
     setNavigation(updatedNavigation);
   }, [router]);
 
-  console.log(navigation.filter((item) => router.pathname.includes(item.href)));
+  // console.log(navigation.filter((item) => router.pathname.includes(item.href)));
 
   return (
     <>
@@ -50,7 +50,7 @@ export default function AppLayout({ children }) {
         {/* Static sidebar for desktop */}
         <DesktopSidebar navigation={navigation} />
 
-        <div className="lg:pl-72">
+        <div className="lg:pl-[16rem]">
           <Header
             userNavigation={userNavigation}
             setSidebarOpen={setSidebarOpen}
